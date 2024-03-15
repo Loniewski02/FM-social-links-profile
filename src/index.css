@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
+
+@layer base {
+  * {
+    @apply m-0 box-border p-0;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    @apply h-[100vh] bg-offBlack1 p-4;
+  }
+
+  #root {
+    @apply flex-center h-full;
+  }
+}
