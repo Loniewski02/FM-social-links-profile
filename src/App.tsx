@@ -11,7 +11,7 @@ const DUMMY_LINKS: { id: string; name: string; url: string }[] = [
 
 function App() {
   return (
-    <div className="animate-slide flex w-full max-w-[327px] flex-col items-center gap-6 rounded-xl bg-darkGrey1 p-6 sm:max-w-[384px]">
+    <div className="animate-slide flex w-full max-w-[327px] flex-col items-center gap-6 rounded-xl bg-darkGrey1 p-6 sm:max-w-[384px] sm:p-10">
       <img
         src={profile}
         alt=""
@@ -28,7 +28,7 @@ function App() {
       <p className="text-center text-sm font-normal text-white1">
         "Front-end developer and avid reader."
       </p>
-      <div className="flex w-full flex-col gap-3">
+      <div className="flex w-full flex-col gap-3 sm:gap-4">
         {DUMMY_LINKS.map((link) => (
           <Link key={link.id} href={link.url}>
             {link.name}
